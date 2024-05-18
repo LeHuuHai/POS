@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShiftController">
+   <children>
+      <Pane layoutY="1.0" prefHeight="700.0" prefWidth="260.0" style="-fx-background-color: #ABC4AA; -fx-border-color: transparent;">
+         <children>
+            <Button fx:id="employee_nav" layoutY="43.0" mnemonicParsing="false" onAction="#clickEmployeeNav" prefHeight="80.0" prefWidth="260.0" style="-fx-background-color: transparent;" text="Employee" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="item_nav" layoutY="123.0" mnemonicParsing="false" onAction="#clickItemNav" prefHeight="80.0" prefWidth="260.0" style="-fx-background-color: transparent;" text="Item" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="revenue_nav" layoutY="203.0" mnemonicParsing="false" onAction="#clickRevenueNav" prefHeight="80.0" prefWidth="260.0" style="-fx-background-color: transparent;" text="Revenue" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="payroll_nav" layoutY="283.0" mnemonicParsing="false" onAction="#clickPayrollNav" prefHeight="80.0" prefWidth="260.0" style="-fx-background-color: transparent;" text="Payroll" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Line endX="100.0" layoutX="130.0" layoutY="123.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="100.0" layoutX="130.0" layoutY="203.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="100.0" layoutX="130.0" layoutY="283.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="100.0" layoutX="130.0" layoutY="363.0" startX="-100.0" stroke="WHITE" />
+            <Button fx:id="logout_btn" layoutX="59.0" layoutY="554.0" mnemonicParsing="false" onAction="#clickLogoutBtn" prefHeight="53.0" prefWidth="143.0" style="-fx-background-color: #597E52;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="shift_nav" layoutY="364.0" mnemonicParsing="false" onAction="#clickShiftNav" prefHeight="80.0" prefWidth="260.0" style="-fx-background-color: transparent;" text="Shift" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Line endX="100.0" layoutX="130.0" layoutY="444.0" startX="-100.0" stroke="WHITE" />
+         </children>
+      </Pane>
+      
+      <StackPane layoutX="855.0" layoutY="39.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" />
+		
+      <TableView fx:id="shift_table" layoutX="272.0" layoutY="122.0" prefHeight="544.0" prefWidth="920.0">
+        <columns>
+          <TableColumn fx:id="shift_id_col" prefWidth="65.0" text="ID" />
+          <TableColumn fx:id="shift_idemployee_col" prefWidth="110.0" text="ID_Employee" />
+            <TableColumn fx:id="shift_time_col" minWidth="0.0" prefWidth="613.0" text="Time" />
+            <TableColumn fx:id="shift_infor_col" prefWidth="131.0" text="Info" />
+        </columns>
+      </TableView>
+      <Label layoutX="328.0" layoutY="19.0" prefHeight="43.0" prefWidth="90.0" style="-fx-background-color: transparent;" text="From Time">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="542.0" layoutY="19.0" prefHeight="43.0" prefWidth="90.0" style="-fx-background-color: transparent;" text="To Time">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="shift_search_btn" onAction="#clickBtnSearchShift" layoutX="738.0" layoutY="54.0" mnemonicParsing="false" style="-fx-background-color: ABC4AA;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+		        
+	  <DatePicker fx:id="shift_fromtime_datePicker" layoutX="328.0" layoutY="58.0" prefHeight="31.0" prefWidth="162.0" />
+      <DatePicker fx:id="shift_totime_datePicker" layoutX="542.0" layoutY="58.0" prefHeight="31.0" prefWidth="162.0" />
+   </children>
+</AnchorPane>

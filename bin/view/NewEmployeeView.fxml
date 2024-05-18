@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" 
+xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewEmployeeController">
+   <children>
+      <Label alignment="CENTER" layoutX="95.0" layoutY="114.0" prefHeight="44.0" prefWidth="94.0" style="-fx-background-color: #B0926A;" text="Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="523.0" layoutY="174.0" prefHeight="44.0" prefWidth="94.0" style="-fx-background-color: #B0926A;" text="Gender" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="460.0" layoutY="113.0" prefHeight="44.0" prefWidth="157.0" style="-fx-background-color: #B0926A;" text="Date of Birth" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="32.0" layoutY="175.0" prefHeight="44.0" prefWidth="157.0" style="-fx-background-color: #B0926A;" text="Phone" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="32.0" layoutY="300.0" prefHeight="44.0" prefWidth="157.0" style="-fx-background-color: #B0926A;" text="Address" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="32.0" layoutY="237.0" prefHeight="44.0" prefWidth="157.0" style="-fx-background-color: #B0926A;" text="ID card" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="460.0" layoutY="237.0" prefHeight="44.0" prefWidth="157.0" style="-fx-background-color: #B0926A;" text="Salary" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newemployee_name_textfield" alignment="CENTER" layoutX="203.0" layoutY="115.0" prefHeight="44.0" prefWidth="236.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="newemployee_phone_textfield" alignment="CENTER" layoutX="203.0" layoutY="174.0" prefHeight="44.0" prefWidth="236.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="newemployee_idcard_textfield" alignment="CENTER" layoutX="203.0" layoutY="237.0" prefHeight="44.0" prefWidth="236.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="newemployee_address_textfield" alignment="CENTER" layoutX="203.0" layoutY="300.0" prefHeight="44.0" prefWidth="236.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="newemployee_dob_textfield" alignment="CENTER" layoutX="633.0" layoutY="113.0" prefHeight="44.0" prefWidth="143.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="newemployee_salary_textfield" alignment="CENTER" layoutX="633.0" layoutY="237.0" prefHeight="44.0" prefWidth="143.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Button fx:id="add_newemployee_btn" onAction="#clickBtnNewEmployee" layoutX="298.0" layoutY="404.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="204.0" style="-fx-background-color: #B0926A;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="258.0" layoutY="34.0" prefHeight="53.0" prefWidth="284.0" text="New Employee" textFill="#756550">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="newemployee_gender_choicebox" layoutX="633.0" layoutY="174.0" prefHeight="44.0" prefWidth="69.0" />
+   </children>
+</AnchorPane>

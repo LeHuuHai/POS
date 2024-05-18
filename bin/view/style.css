@@ -1,0 +1,6 @@
+#login {
+	-fx-background-color: transparent;
+    -fx-background-image: url('/assets/background/login_background.jpg');
+    -fx-background-size: cover; 
+    -fx-background-repeat: no-repeat; 
+}

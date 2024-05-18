@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeController">
+   <children>
+      <Pane layoutY="1.0" prefHeight="700.0" prefWidth="260.0" style="-fx-background-color: #ABC4AA; -fx-border-color: transparent;">
+         <children>
+            <Button fx:id="employee_nav" layoutY="43.0" mnemonicParsing="false" onAction="#clickEmployeeNav" prefHeight="80.0" prefWidth="260.0" style="-fx-background-color: transparent;" text="Employee" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="item_nav" layoutY="123.0" mnemonicParsing="false" onAction="#clickItemNav" prefHeight="80.0" prefWidth="260.0" style="-fx-background-color: transparent;" text="Item" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="revenue_nav" layoutY="203.0" mnemonicParsing="false" onAction="#clickRevenueNav" prefHeight="80.0" prefWidth="260.0" style="-fx-background-color: transparent;" text="Revenue" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="payroll_nav" layoutY="283.0" mnemonicParsing="false" onAction="#clickPayrollNav" prefHeight="80.0" prefWidth="260.0" style="-fx-background-color: transparent;" text="Payroll" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Line endX="100.0" layoutX="130.0" layoutY="123.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="100.0" layoutX="130.0" layoutY="203.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="100.0" layoutX="130.0" layoutY="283.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="100.0" layoutX="130.0" layoutY="363.0" startX="-100.0" stroke="WHITE" />
+            <Button fx:id="logout_btn" layoutX="59.0" layoutY="554.0" mnemonicParsing="false" onAction="#clickLogoutBtn" prefHeight="53.0" prefWidth="143.0" style="-fx-background-color: #597E52;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="shift_nav" layoutY="364.0" mnemonicParsing="false" onAction="#clickShiftNav" prefHeight="80.0" prefWidth="260.0" style="-fx-background-color: transparent;" text="Shift" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Line endX="100.0" layoutX="130.0" layoutY="444.0" startX="-100.0" stroke="WHITE" />
+         </children>
+      </Pane>
+      <TableView fx:id="employee_table" layoutX="272.0" layoutY="122.0" prefHeight="544.0" prefWidth="920.0">
+        <columns>
+          <TableColumn fx:id="employee_id_col" prefWidth="65.0" text="ID" />
+          <TableColumn fx:id="employee_name_col" prefWidth="85.0" text="Name" />
+            <TableColumn fx:id="employee_gender_col" prefWidth="61.0" text="Gender" />
+            <TableColumn fx:id="employee_dob_col" prefWidth="119.0" text="Date of Birth" />
+            <TableColumn fx:id="employee_phone_col" prefWidth="85.0" text="Phone" />
+            <TableColumn fx:id="employee_address_col" prefWidth="146.0" text="Address" />
+            <TableColumn fx:id="employee_idcard_col" prefWidth="122.0" text="ID card" />
+            <TableColumn fx:id="employee_salary_col" prefWidth="141.0" text="Salary" />
+            <TableColumn fx:id="employee_state_col" prefWidth="95.0" text="State" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="294.0" layoutY="25.0" prefHeight="44.0" prefWidth="85.0" text="Total">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="487.0" layoutY="25.0" prefHeight="44.0" prefWidth="85.0" text="Active">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="675.0" layoutY="25.0" prefHeight="44.0" prefWidth="85.0" text="Deactive">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="new_employee_btn" layoutX="1006.0" layoutY="59.0" mnemonicParsing="false" onAction="#clickBtnNewEmployee" style="-fx-background-color: ABC4AA;" text="New Employee" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="total_employee" alignment="CENTER" contentDisplay="CENTER" layoutX="369.0" layoutY="25.0" prefHeight="44.0" prefWidth="55.0" style="-fx-border-style: solid;">
+         <font>
+            <Font size="20" />
+         </font></Label>
+      <Label fx:id="active_employee" alignment="CENTER" contentDisplay="CENTER" layoutX="563.0" layoutY="25.0" prefHeight="44.0" prefWidth="55.0" style="-fx-border-style: solid;">
+         <font>
+            <Font size="20" />
+         </font></Label>
+      <Label fx:id="deactive_employee" alignment="CENTER" contentDisplay="CENTER" layoutX="760.0" layoutY="25.0" prefHeight="44.0" prefWidth="55.0" style="-fx-border-style: solid;">
+         <font>
+            <Font size="20" />
+         </font></Label>
+   </children>
+</AnchorPane>

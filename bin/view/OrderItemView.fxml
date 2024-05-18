@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderItemController">
+   <children>
+      <Label fx:id="orderitem_name_label" alignment="CENTER" layoutX="-1.0" prefHeight="51.0" prefWidth="169.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="orderitem_quantity_spinner" layoutX="64.0" layoutY="61.0" prefHeight="37.0" prefWidth="123.0">
+		  <valueFactory>
+		    <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="1" initialValue="1" max="100" min="0" />
+		  </valueFactory>
+		</Spinner>
+      
+      <Button fx:id="orderitem_add_btn" layoutX="85.0" layoutY="117.0" mnemonicParsing="false" onAction="#clickAddItemOrder" prefHeight="37.0" prefWidth="80.0" style="-fx-background-color: #CD8E68;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Label fx:id="orderitem_price_label" alignment="CENTER" layoutX="175.0" prefHeight="51.0" prefWidth="80.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="orderitem_id_label" layoutY="156.0" visible="false" />
+   </children>
+</Pane>

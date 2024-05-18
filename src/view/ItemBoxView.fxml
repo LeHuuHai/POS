@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clickItemBox" prefHeight="250.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemBoxController">
+   <children>
+      <ImageView fx:id="imgitem_view" fitHeight="144.0" fitWidth="174.0" pickOnBounds="true">
+        
+      </ImageView>
+      <VBox prefHeight="81.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="nameitem_label" alignment="CENTER" prefHeight="54.0" prefWidth="220.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="priceitem_label" alignment="CENTER" prefHeight="66.0" prefWidth="200.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="iditem_label" visible="false"/>
+         </children>
+      </VBox>
+   </children>
+</VBox>

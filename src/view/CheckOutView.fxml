@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CheckOutController">
+   <children>
+      <Label alignment="CENTER" layoutX="158.0" layoutY="152.0" prefHeight="51.0" prefWidth="142.0" style="-fx-background-color: #B0926A;" text="Your ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="checkout_idemployee_textfield" onAction="#changeIdEmployee" alignment="CENTER" layoutX="323.0" layoutY="152.0" prefHeight="48.0" prefWidth="176.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="158.0" layoutY="76.0" prefHeight="51.0" prefWidth="142.0" style="-fx-background-color: #B0926A;" text="TIME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="158.0" layoutY="234.0" prefHeight="51.0" prefWidth="142.0" style="-fx-background-color: #B0926A;" text="Your Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="checkout_btn" contentDisplay="CENTER" layoutX="297.0" layoutY="347.0" mnemonicParsing="false" onAction="#clickBtnCheckOut" prefHeight="51.0" prefWidth="206.0" style="-fx-background-color: BCA37F;" text="Check Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="checkout_time_label" alignment="CENTER" layoutX="323.0" layoutY="76.0" prefHeight="51.0" prefWidth="320.0" style="-fx-border-style: solid;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="checkout_name_label" alignment="CENTER" layoutX="323.0" layoutY="234.0" prefHeight="51.0" prefWidth="320.0" style="-fx-border-style: solid;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

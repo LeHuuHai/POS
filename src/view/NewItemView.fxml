@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewItemController">
+   <children>
+      <Label alignment="CENTER" layoutX="92.0" layoutY="137.0" prefHeight="44.0" prefWidth="94.0" style="-fx-background-color: #B0926A;" text="Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="510.0" layoutY="138.0" prefHeight="44.0" prefWidth="94.0" style="-fx-background-color: #B0926A;" text="Type" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="29.0" layoutY="198.0" prefHeight="44.0" prefWidth="157.0" style="-fx-background-color: #B0926A;" text="Price" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="29.0" layoutY="260.0" prefHeight="44.0" prefWidth="157.0" style="-fx-background-color: #B0926A;" text="Img" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newitem_name_textfield" alignment="CENTER" layoutX="200.0" layoutY="138.0" prefHeight="44.0" prefWidth="236.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="newitem_price_textfield" alignment="CENTER" layoutX="200.0" layoutY="197.0" prefHeight="44.0" prefWidth="236.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="newitem_imgpath_textfield" alignment="CENTER" layoutX="200.0" layoutY="260.0" prefHeight="44.0" prefWidth="493.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Button fx:id="add_newitem_btn" onAction="#clickBtnNewItem" layoutX="298.0" layoutY="390.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="204.0" style="-fx-background-color: #B0926A;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="311.0" layoutY="42.0" prefHeight="53.0" prefWidth="178.0" text="New Item" textFill="#756550">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="newitem_type_choicebox" layoutX="618.0" layoutY="137.0" prefHeight="44.0" prefWidth="69.0" />
+   </children>
+</AnchorPane>

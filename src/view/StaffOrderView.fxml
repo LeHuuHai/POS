@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="stafforder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StaffOrderController">
+	<stylesheets>
+	    <String fx:value="/view/style.css" />
+	</stylesheets>
+   <children>
+      <Pane layoutY="14.0" prefHeight="80.0" prefWidth="1200.0" style="-fx-background-color: CD8E68;">
+         <children>
+            <Button fx:id="home_nav" layoutX="118.0" mnemonicParsing="false" onAction="#clickBtnHomeNav" prefHeight="80.0" prefWidth="200.0" style=" -fx-background-color: transparent;" text="Home" textFill="white">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="checkin_nav" layoutX="318.0" mnemonicParsing="false" onAction="#clickBtnCheckInNav" prefHeight="80.0" prefWidth="207.0" style=" -fx-background-color: transparent;" text="Check in" textFill="white">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="checkout_nav" layoutX="525.0" mnemonicParsing="false" onAction="#clickBtnCheckOutNav" prefHeight="80.0" prefWidth="217.0" style=" -fx-background-color: transparent;" text="Check out" textFill="white">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Button>
+            <Group layoutX="-75.0" layoutY="-177.0">
+               <children>
+                  <Circle fill="WHITE" layoutX="140.0" layoutY="217.0" radius="37.0" stroke="WHITE" strokeType="INSIDE" />
+                  <ImageView fitHeight="62.0" fitWidth="74.0" layoutX="109.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/pngwing.com.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+         </children>
+      </Pane>
+      <Pane layoutY="-6.0" prefHeight="20.0" prefWidth="1200.0" style="-fx-background-color: #6B240C;" />
+      <Pane layoutY="93.0" prefHeight="608.0" prefWidth="1200.0">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" layoutX="30.0" layoutY="66.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="515.0" prefWidth="617.0" vbarPolicy="ALWAYS">
+               <content>
+                  <VBox fx:id="item_vbox" prefHeight="517.0" prefWidth="600.0" style="-fx-background-color: white;" />
+               </content></ScrollPane>
+            <Button fx:id="all_btn" contentDisplay="TOP" layoutX="30.0" layoutY="14.0" mnemonicParsing="false" onAction="#clickBtnAll" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: CD8E68;" text="All" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="coffee_btn" contentDisplay="TOP" layoutX="224.0" layoutY="14.0" mnemonicParsing="false" onAction="#clickBtnCoffee" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: CD8E68;" text="Coffee" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="tea_btn" contentDisplay="TOP" layoutX="129.0" layoutY="14.0" mnemonicParsing="false" onAction="#clickBtnTea" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: CD8E68;" text="Tea" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="cake_btn" contentDisplay="TOP" layoutX="317.0" layoutY="14.0" mnemonicParsing="false" onAction="#clickBtnCake" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: CD8E68;" text="Cake" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Pane layoutX="679.0" layoutY="7.0" prefHeight="589.0" prefWidth="497.0" style="-fx-border-color: #3D3B40;">
+               <children>
+                  <TableView fx:id="Bill_tableview" layoutX="30.0" layoutY="14.0" prefHeight="311.0" prefWidth="438.0">
+                    <columns>
+                      <TableColumn fx:id="Bill_nameitem_col" prefWidth="194.0" text="Name" />
+                      <TableColumn fx:id="Bill_quantity_col" prefWidth="87.0" text="Quantity" />
+                      <TableColumn fx:id="Bill_price_col" prefWidth="156.0" text="Price" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="105.0" layoutY="331.0" prefHeight="39.0" prefWidth="115.0" text="SUBTOTAL">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="106.0" layoutY="377.0" prefHeight="39.0" prefWidth="115.0" text="VAT">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="106.0" layoutY="416.0" prefHeight="39.0" prefWidth="115.0" text="DISCOUNT">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="107.0" layoutY="468.0" prefHeight="39.0" prefWidth="115.0" text="TOTAL">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bill_subtotal_label" alignment="CENTER_RIGHT" layoutX="210.0" layoutY="331.0" prefHeight="39.0" prefWidth="80.0" text="0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="296.0" layoutY="331.0" prefHeight="39.0" prefWidth="38.0" text="\$">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="297.0" layoutY="377.0" prefHeight="39.0" prefWidth="38.0" text="\%">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bill_vat_label" alignment="CENTER_RIGHT" layoutX="243.0" layoutY="377.0" prefHeight="39.0" prefWidth="47.0" text="10">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="297.0" layoutY="416.0" prefHeight="39.0" prefWidth="38.0" text="\%">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="298.0" layoutY="468.0" prefHeight="39.0" prefWidth="38.0" text="\$">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bill_total_label" alignment="CENTER_RIGHT" layoutX="212.0" layoutY="468.0" prefHeight="39.0" prefWidth="80.0" text="0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Line endX="200.0" layoutX="199.0" layoutY="370.0" startX="-100.0" />
+                  <Line endX="200.0" layoutX="193.0" layoutY="468.0" startX="-100.0" />
+                  <Button fx:id="Bill_remove_btn" layoutX="106.0" layoutY="529.0" mnemonicParsing="false" onAction="#clickBtnRemoveBill" prefHeight="39.0" prefWidth="106.0" style="-fx-background-color: #B0926A;" text="Remove" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Bill_pay_btn" layoutX="283.0" layoutY="529.0" mnemonicParsing="false" onAction="#clickBtnPayBill" prefHeight="39.0" prefWidth="106.0" style="-fx-background-color: #B0926A;" text="Pay" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="bill_discount_textfield" alignment="CENTER_RIGHT" layoutX="211.0" layoutY="416.0" onAction="#changeDiscount" prefHeight="39.0" prefWidth="80.0" text="0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></TextField>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

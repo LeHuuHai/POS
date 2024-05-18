@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="login" id="login" style="-fx-background-image: url('/assets/background/login_background.jpg')"  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="mainFxmlClass" 
+xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+    <stylesheets>
+	    <String fx:value="/view/style.css" />
+	</stylesheets>
+   <children>
+      <Group layoutX="-132.0" layoutY="-26.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a182672f" height="599.0" layoutX="744.0" layoutY="77.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke: transparent; -fx-arc-height: 20; -fx-arc-width: 20;" width="520.0" AnchorPane.bottomAnchor="-77.0" AnchorPane.leftAnchor="744.0" AnchorPane.rightAnchor="-720.3291015625" AnchorPane.topAnchor="77.0" />
+            <Group layoutX="1.0" layoutY="95.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="65.0" layoutX="821.0" layoutY="216.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-height: 60; -fx-arc-width: 60; -fx-stroke: transparent;" width="362.0" />
+                  <Circle fill="#a49f9f" layoutX="852.0" layoutY="249.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke: transparent;" />
+                  <TextField layoutX="897.0" layoutY="216.0" prefHeight="65.0" prefWidth="279.0" promptText="          Password" style="-fx-border-color: transparent; -fx-background-color: transparent; -fx-padding: auto;">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Group>
+            <Line endX="100.0" layoutX="1002.0" layoutY="525.0" startX="-100.0" />
+            <Group id="login_usernamebox" layoutX="824.0" layoutY="115.0" />
+            <Text fill="#473c27" layoutX="820.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN LOGIN" textAlignment="CENTER" wrappingWidth="368.6708984375">
+               <font>
+                  <Font name="System Bold" size="49.0" />
+               </font>
+            </Text>
+            <Group id="login_title" layoutX="704.0" layoutY="102.0" />
+            <Button fx:id="login_staff_btn" onAction="#clickBtnLoginStaff" layoutX="791.0" layoutY="559.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="423.0" style="-fx-background-color: #473C27; -fx-border-radius: 20;" text="Continue as employee" textFill="#fcf8f8">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Button>
+            <Button fx:id="login_ad_btn" onAction="#clickBtnLoginAd" layoutX="861.0" layoutY="408.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="285.0" style="-fx-background-color: #473C27; -fx-border-radius: 20;" text="LOGIN" textFill="#fcf8f8">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Button>
+            <Group layoutY="14.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="65.0" layoutX="821.0" layoutY="216.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-height: 60; -fx-arc-width: 60; -fx-stroke: transparent;" width="362.0" />
+                  <Circle fill="#a49f9f" layoutX="852.0" layoutY="249.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke: transparent;" />
+                  <TextField layoutX="891.0" layoutY="216.0" prefHeight="65.0" prefWidth="289.0" promptText="          Username" style="-fx-border-color: transparent; -fx-background-color: transparent; -fx-padding: auto;">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Group>
+            <Text fill="#473c27" layoutX="867.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome back" textAlignment="CENTER" wrappingWidth="272.6796875">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>
+
